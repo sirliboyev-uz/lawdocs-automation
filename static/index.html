@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Firm — Document Automation</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h1>Document Automation</h1>
+        <p>Case Management &amp; OCR</p>
+      </div>
+      <div class="sidebar-actions">
+        <button class="btn btn-primary btn-full" onclick="showNewCaseModal()">
+          + New Case
+        </button>
+      </div>
+      <div class="case-list" id="case-list"></div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main" id="main-content">
+      <div class="main-empty">Select or create a case to begin</div>
+    </main>
+  </div>
+
+  <!-- Toasts -->
+  <div class="toast-container" id="toasts"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
